@@ -26,8 +26,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Api.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Infrastructure.Persistence", "src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\BlazorSozluk.Infrastructure.Persistence.csproj", "{5BF0DE2E-1741-4C06-9369-DB47467869F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Api.WebApi", "src\Api\WebApi\BlazorSozluk.Api.WebApi\BlazorSozluk.Api.WebApi.csproj", "{ADA236B6-AA20-47A4-8186-F530EDB06D51}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.FavoriteService", "src\Projections\BlazorSozluk.Projections.FavoriteService\BlazorSozluk.Projections.FavoriteService.csproj", "{F423993A-D734-4E35-AE9C-898DACFB5148}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.User", "src\Projections\BlazorSozluk.Projections.User\BlazorSozluk.Projections.User.csproj", "{F2D2902E-2CB5-4EEB-834D-5A8C0422C9EF}"
@@ -41,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 		README.MD = README.MD
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Api.WebApi", "src\Api\WebApi\BlazorSozluk.Api.WebApi\BlazorSozluk.Api.WebApi.csproj", "{8CDD23A9-758C-404E-9EA8-93EF6C6EB10F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,11 +60,11 @@ Global
 		{BC228EEE-9FDF-4D4F-A37E-BE86C925CAC2} = {67508565-A9AE-415E-B536-28FEF0C716C1}
 		{3DBAA79B-22B8-47D4-803D-8ECA25CF1308} = {67508565-A9AE-415E-B536-28FEF0C716C1}
 		{5BF0DE2E-1741-4C06-9369-DB47467869F1} = {9591434B-A232-4396-9362-54C117B48520}
-		{ADA236B6-AA20-47A4-8186-F530EDB06D51} = {925868CB-7B0D-4AEF-A86C-E9D0D81033F5}
 		{F423993A-D734-4E35-AE9C-898DACFB5148} = {03AD8192-031F-4CD1-820F-95EC513DB239}
 		{F2D2902E-2CB5-4EEB-834D-5A8C0422C9EF} = {03AD8192-031F-4CD1-820F-95EC513DB239}
 		{1979F19E-C968-4978-A453-D99585A12E6B} = {03AD8192-031F-4CD1-820F-95EC513DB239}
 		{CF7709EE-B6FC-4912-B4FC-B4276BB14681} = {20343CD6-E5B0-4946-BB28-FB1E37311CAF}
+		{8CDD23A9-758C-404E-9EA8-93EF6C6EB10F} = {925868CB-7B0D-4AEF-A86C-E9D0D81033F5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BDCD3D4F-ECD4-4F9B-B3A3-F1F07AEBFE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -83,10 +83,6 @@ Global
 		{5BF0DE2E-1741-4C06-9369-DB47467869F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BF0DE2E-1741-4C06-9369-DB47467869F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BF0DE2E-1741-4C06-9369-DB47467869F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADA236B6-AA20-47A4-8186-F530EDB06D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADA236B6-AA20-47A4-8186-F530EDB06D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADA236B6-AA20-47A4-8186-F530EDB06D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADA236B6-AA20-47A4-8186-F530EDB06D51}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F423993A-D734-4E35-AE9C-898DACFB5148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F423993A-D734-4E35-AE9C-898DACFB5148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F423993A-D734-4E35-AE9C-898DACFB5148}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,5 +99,9 @@ Global
 		{CF7709EE-B6FC-4912-B4FC-B4276BB14681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF7709EE-B6FC-4912-B4FC-B4276BB14681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF7709EE-B6FC-4912-B4FC-B4276BB14681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CDD23A9-758C-404E-9EA8-93EF6C6EB10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CDD23A9-758C-404E-9EA8-93EF6C6EB10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CDD23A9-758C-404E-9EA8-93EF6C6EB10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CDD23A9-758C-404E-9EA8-93EF6C6EB10F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
