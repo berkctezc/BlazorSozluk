@@ -1,6 +1,6 @@
 namespace BlazorSozluk.Api.Domain.Models;
 
-public class User
+public class User : BaseEntity
 {
     public string FirstName { get; set; }
 
