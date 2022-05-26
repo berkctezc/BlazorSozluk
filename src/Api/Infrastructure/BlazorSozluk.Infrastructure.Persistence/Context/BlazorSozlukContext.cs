@@ -9,6 +9,10 @@ public class BlazorSozlukContext : DbContext
 {
     public const string DEFAULT_SCHEMA = "public";
 
+    public BlazorSozlukContext()
+    {
+    }
+
     public BlazorSozlukContext(DbContextOptions options) : base(options)
     {
     }
@@ -24,6 +28,18 @@ public class BlazorSozlukContext : DbContext
     public DbSet<EntryCommentFavorite> EntryCommentFavorites { get; set; }
 
     public DbSet<EmailConfirmation> EmailConfirmations { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseNpgsql("User ID=postgres;Password=postgres;Server=127.0.0.1;Port=5432;Database=blazorsozluk;Pooling=true", opt =>
+            {
+                opt.EnableRetryOnFailure();
+            });
+        }
+        base.OnConfiguring(optionsBuilder);
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
