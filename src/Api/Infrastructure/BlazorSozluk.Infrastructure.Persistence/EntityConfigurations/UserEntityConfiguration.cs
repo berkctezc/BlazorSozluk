@@ -11,6 +11,6 @@ public class UserEntityConfiguration : BaseEntityConfiguration<EmailConfirmation
     {
         base.Configure(builder);
 
-        builder.ToTable("user", BlazorSozlukContext.DEFAULT_SCHEMA);
+        builder.ToTable("user", BlazorSozlukContext.DefaultSchema);
     }
 }

@@ -10,7 +10,7 @@ public class EntryCommentEntityConfiguration : BaseEntityConfiguration<Api.Domai
     {
         base.Configure(builder);
 
-        builder.ToTable("entrycomment", BlazorSozlukContext.DEFAULT_SCHEMA);
+        builder.ToTable("entrycomment", BlazorSozlukContext.DefaultSchema);
 
         builder.HasOne(i => i.CreatedBy)
             .WithMany(i => i.EntryComments)

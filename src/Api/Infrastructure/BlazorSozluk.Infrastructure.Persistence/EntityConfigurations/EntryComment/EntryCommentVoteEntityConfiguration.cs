@@ -10,7 +10,7 @@ public class EntryCommentVoteEntityConfiguration : BaseEntityConfiguration<Api.D
     {
         base.Configure(builder);
 
-        builder.ToTable("entrycommentvote", BlazorSozlukContext.DEFAULT_SCHEMA);
+        builder.ToTable("entrycommentvote", BlazorSozlukContext.DefaultSchema);
 
         builder.HasOne(i => i.EntryComment)
             .WithMany(i => i.EntryCommentVotes)

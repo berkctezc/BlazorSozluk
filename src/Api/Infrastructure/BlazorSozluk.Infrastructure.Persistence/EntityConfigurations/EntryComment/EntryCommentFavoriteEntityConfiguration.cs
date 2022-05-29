@@ -10,7 +10,7 @@ public class EntryCommentFavoriteEntityConfiguration : BaseEntityConfiguration<A
     {
         base.Configure(builder);
 
-        builder.ToTable("entrycommentfavorite", BlazorSozlukContext.DEFAULT_SCHEMA);
+        builder.ToTable("entrycommentfavorite", BlazorSozlukContext.DefaultSchema);
 
         builder.HasOne(i => i.EntryComment)
             .WithMany(i => i.EntryCommentFavorites)
