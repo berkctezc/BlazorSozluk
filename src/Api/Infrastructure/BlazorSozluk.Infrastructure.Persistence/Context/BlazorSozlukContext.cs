@@ -7,7 +7,7 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context;
 
 public class BlazorSozlukContext : DbContext
 {
-    public const string DEFAULT_SCHEMA = "public";
+    public const string DefaultSchema = "public";
 
     public BlazorSozlukContext()
     {

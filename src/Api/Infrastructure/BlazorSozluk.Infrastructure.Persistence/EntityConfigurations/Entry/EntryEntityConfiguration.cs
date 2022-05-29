@@ -10,7 +10,7 @@ public class EntryEntityConfiguration : BaseEntityConfiguration<Api.Domain.Model
     {
         base.Configure(builder);
 
-        builder.ToTable("entry", BlazorSozlukContext.DEFAULT_SCHEMA);
+        builder.ToTable("entry", BlazorSozlukContext.DefaultSchema);
 
         builder.HasOne(i => i.CreatedBy)
             .WithMany(i => i.Entries)

@@ -10,7 +10,7 @@ public class EntryFavoriteEntityConfiguration : BaseEntityConfiguration<Api.Doma
     {
         base.Configure(builder);
 
-        builder.ToTable("entryfavorite", BlazorSozlukContext.DEFAULT_SCHEMA);
+        builder.ToTable("entryfavorite", BlazorSozlukContext.DefaultSchema);
 
         builder.HasOne(i => i.Entry)
             .WithMany(i => i.EntryFavorites)
