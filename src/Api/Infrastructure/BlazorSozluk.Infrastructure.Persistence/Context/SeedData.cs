@@ -16,7 +16,7 @@ internal class SeedData
             .RuleFor(i => i.FirstName, i => i.Person.FirstName)
             .RuleFor(i => i.LastName, i => i.Person.LastName)
             .RuleFor(i => i.EmailAddress, i => i.Person.Email)
-            .RuleFor(i => i.UserName, i => i.Internet.UserName())
+            .RuleFor(i => i.UserName, i => i.Person.UserName)
             .RuleFor(i => i.Password, i => PasswordEncryptor.Encrypt(i.Internet.Password()))
             .RuleFor(i => i.EmailConfirmed, i => i.PickRandom(true, false))
             .Generate(500);
