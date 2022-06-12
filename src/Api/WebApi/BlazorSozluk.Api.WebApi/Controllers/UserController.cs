@@ -21,5 +21,19 @@ public class UserController : ControllerBase
     {
         var res = await _mediator.Send(command);
         return Ok(res);
+    }    
+    
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody]CreateUserCommand command)
+    {
+        var guid = await _mediator.Send(command);
+        return Ok(guid);
+    }  
+    
+    [HttpPost("Update")]
+    public async Task<IActionResult> UpdateUser([FromBody]UpdateUserCommand command)
+    {
+        var guid = await _mediator.Send(command);
+        return Ok(guid);
     }
 }
